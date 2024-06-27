@@ -1,0 +1,47 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main__img {
+  width: 100%;
+  display: block;
+}
+
+.icon-links {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.icon-links a {
+  color: orange; /* Set the icon color to orange */
+  font-size: 30px; /* Adjust the size as needed */
+}
+
+.icon-links a:hover {
+  color: darkorange; /* Optional: change color on hover */
+}
+
+@media all and (max-width: 450px){
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mob__text{
+    display: none;
+  }
+  .main__img {
+    margin-top: 200px;
+}
+}
